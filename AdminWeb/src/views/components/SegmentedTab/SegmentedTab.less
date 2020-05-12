@@ -1,0 +1,21 @@
+#segmented-tab {
+    display: flex;
+    .s-tab-cont {
+        display: flex;
+        border-radius: 6px;
+        overflow: hidden;
+        border: 1px solid #2196F3;
+        .s-tab-item {
+            position: relative;
+            padding: 8px 14px;
+            font-size: 12px;
+            cursor: pointer;
+            color: #2196F3;
+            transition: all .1s linear;
+            &.active {
+                background: #2196F3;
+                color: #fff;
+            }
+        }
+    }
+}

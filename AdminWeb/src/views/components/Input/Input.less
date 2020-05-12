@@ -1,0 +1,40 @@
+//noinspection CssReplaceWithShorthandSafely
+input, textarea {
+    display: flex;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid;
+    border-color: #ddd;
+    font-size: 13px;
+    padding: 10px 20px;
+    height: 40px;
+    resize: vertical;
+    font-family: "Google Sans", Arial, serif;
+    &.disabled {
+        opacity: 0.6;
+        background: #eee;
+    }
+    &.uppercase {
+        text-transform: uppercase;
+    }
+    &.no-fade {
+        opacity: 1;
+        background: #f5f5f5;
+        border-color: #eaeaea;
+    }
+    &::-webkit-input-placeholder { /* Edge */
+        color: #bbb;
+    }
+    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: #bbb;
+    }
+    &::placeholder {
+        color: #bbb;
+    }
+}
+
+.input-warning {
+    margin-top: 8px;
+    color: #f44336;
+    font-size: 13px;
+}

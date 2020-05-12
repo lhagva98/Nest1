@@ -1,0 +1,490 @@
+@elev1: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+@elev2: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+@elev3: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+@elev4: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+@elev5: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+
+@font-face {
+  font-family: "Google Sans";
+  src: url("/fonts/GoogleSans-Regular.ttf");
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  background: #f3f3f3;
+  font-family: "Google Sans", Arial, serif;
+  //noinspection CssInvalidPropertyValue
+  text-decoration-skip: ink;
+  line-height: 1.1;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background: #000;
+  opacity: 0.08;
+
+  &.light {
+    background: #fff;
+    opacity: 0.1;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.s-alert-box {
+  border-radius: 20px !important;
+  padding: 10px 36px 10px 18px !important;
+}
+
+.s-alert-warning {
+  background: #ff8f00 !important;
+}
+
+.s-alert-box-inner {
+  font-size: 13px !important;
+  font-family: "Google Sans", Arial, serif !important;
+}
+
+.s-alert-close {
+  top: 9px !important;
+  right: 9px !important;
+}
+
+.container {
+  padding: 40px;
+
+  &.with-scroll {
+    flex: 1;
+    overflow: auto;
+  }
+
+  &.cp-20 {
+    padding: 20px;
+  }
+}
+
+.ui {
+  &.block {
+    display: block;
+  }
+
+  &.flex {
+    display: flex;
+  }
+
+  &.inline-block {
+    display: inline-block;
+  }
+
+  &.full-width {
+    width: 100%;
+  }
+
+  &.flex-full {
+    flex: 1;
+  }
+
+  &.no-stretch {
+    align-items: flex-start;
+  }
+
+  &.column {
+    flex-direction: column;
+  }
+
+  &.end {
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+
+  &.j-cr {
+    justify-content: center;
+  }
+
+  &.j-sa {
+    justify-content: space-around;
+  }
+
+  &.j-sb {
+    justify-content: space-between;
+  }
+
+  &.ai-c {
+    align-items: center;
+  }
+
+  &.ai-flex-start {
+    align-items: flex-start;
+  }
+
+  &.no-shrink {
+    flex-shrink: 0 !important;
+  }
+
+  &.flow-hide {
+    overflow: hidden;
+  }
+
+  &.flow-auto {
+    overflow: auto;
+  }
+
+  &.gap {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+
+.ml-20 {
+  margin-left: 20px;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+
+.mr-20 {
+  margin-right: 20px;
+}
+
+.no-select {
+  user-select: none;
+}
+
+.s-alert-box {
+  border-radius: 10px;
+}
+
+.s-alert-box-inner {
+  font-size: 14px;
+}
+
+.elv-1 {
+  box-shadow: @elev1;
+}
+
+.elv-2 {
+  box-shadow: @elev2;
+}
+
+.elv-3 {
+  box-shadow: @elev3;
+}
+
+.elv-4 {
+  box-shadow: @elev4;
+}
+
+.elv-5 {
+  box-shadow: @elev5;
+}
+
+.gap-5 {
+  width: 5px;
+  height: 5px;
+}
+
+.gap-10 {
+  width: 10px;
+  height: 10px;
+}
+
+.gap-15 {
+  width: 15px;
+  height: 15px;
+}
+
+.gap-20 {
+  width: 20px;
+  height: 20px;
+}
+
+.gap-40 {
+  width: 40px;
+  height: 40px;
+}
+
+.cont {
+  padding: 20px;
+}
+
+.input-status {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+  color: #1975ff;
+
+  .description {
+    margin-top: 6px;
+    font-size: 12px;
+    color: #666;
+  }
+}
+
+.card-header {
+  margin: 15px 0;
+  font-size: 20px;
+  text-transform: uppercase;
+
+  .desc {
+    margin-top: 6px;
+    font-size: 12px;
+    color: #666;
+  }
+}
+
+.card {
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+
+  &.border {
+    border: 1px solid #eee;
+  }
+}
+
+.card-right-button {
+  font-size: 14px;
+  font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+  color: #1975ff;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.invisible-button {
+  position: absolute;
+  visibility: hidden;
+}
+
+.ReactModal__Overlay {
+  display: flex;
+  background: rgba(0, 0, 0, 0.5) !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.ReactModal__Content {
+  position: initial !important;
+  display: inline-block;
+  border: 0 !important;
+  min-width: 640px;
+  max-height: 92%;
+  background: rgb(255, 255, 255);
+  border-radius: 20px !important;
+}
+
+.Collapsible {
+  color: #fff;
+  cursor: pointer;
+}
+
+.Collapsible__trigger {
+  display: block;
+  font-weight: 400;
+  text-decoration: none;
+  position: relative;
+  padding: 20px;
+  font-size: 17px;
+  font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+  &.is-open {
+    &:after {
+      transform: rotateZ(180deg);
+    }
+  }
+
+  &.is-disabled {
+    opacity: 0.5;
+    background-color: grey;
+  }
+}
+
+.Collapsible__contentOuter {
+  background: rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.Collapsible__contentInner {
+  padding: 8px 0;
+
+  p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.CustomTriggerCSS {
+  background-color: lightcoral;
+  transition: background-color 200ms ease;
+}
+
+.CustomTriggerCSS--open {
+  background-color: darkslateblue;
+}
+
+.Collapsible__custom-sibling {
+  padding: 5px;
+  font-size: 12px;
+  background-color: #cbb700;
+}
+
+.transaction-container {
+  ul {
+    padding-left: 0;
+    list-style: none;
+  }
+}
+
+.root-container {
+  display: flex;
+
+  .main-container {
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+      width: 0;
+      background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: transparent;
+    }
+  }
+}
+
+.ReactModalPortal {
+  z-index: 100;
+}
+
+#rp-table {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #fff;
+  overflow: hidden;
+
+  table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+
+    .logo {
+      display: flex;
+      width: 64px;
+      height: 64px;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    th {
+      font-size: 13px;
+      font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial,
+        sans-serif;
+      color: #2196f3;
+    }
+
+    tr {
+      border-bottom: 1px solid #ddd;
+
+      &:first-child:hover {
+        background: rgba(0, 0, 0, 0);
+        cursor: default;
+      }
+
+      &:hover {
+        background: rgba(0, 0, 0, 0.05);
+        cursor: pointer;
+      }
+
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+
+    th,
+    td {
+      padding: 14px 0 14px 20px;
+      text-align: left;
+      border: 0;
+    }
+
+    td {
+      font-size: 13px;
+      color: #777;
+
+      .label {
+        margin-right: 8px;
+        color: #2196f3;
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .root-container {
+    width: 100%;
+  }
+}

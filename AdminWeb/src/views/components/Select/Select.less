@@ -1,0 +1,24 @@
+#select {
+    position: relative;
+    select {
+        display: flex;
+        width: 100%;
+        border-radius: 10px;
+        border: 1px solid #ddd;
+        font-size: 13px;
+        padding: 10px 20px;
+        height: 40px;
+        resize: vertical;
+        -webkit-appearance: initial;
+        &.disabled {
+            opacity: 0.6;
+        }
+    }
+    .arrow {
+        display: block;
+        position: absolute;
+        right: 8px;
+        top: 8px;
+        height: 24px;
+    }
+}
